@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let tenDangNhap = prompt("nhập tên người dùng: ");
+        let matKhau;
+        if(tenDangNhap=="Admin"){
+            matKhau = prompt("Nhập mật khẩu: ")
+            if(matKhau=="Master"){
+                alert("Welcome !!!")
+            }
+            else if (matKhau==""){
+                alert("Mật khẩu không được để trống !!!")
+            }
+            else if (matKhau== null){
+                alert("Bạn chọn lệnh thoát")
+            }
+            else alert("Sai mật khẩu !!!")
+        }
+        else if(tenDangNhap==""){
+            alert("Tên đăng nhập không được để trống !!!")
+        }
+        else alert("Tên tài khoản không chính xác !!!")
+    </script>
+</body>
+</html>
